@@ -1,0 +1,27 @@
+Proje Başlığı: Organizma Oluşturma ve Mutasyon
+
+Proje Amacı:
+Bu proje, MinGW C++ kullanılarak bir organizma oluşturmayı ve bu organizmanın mutasyona uğramasını simüle etmeyi amaçlamaktadır. Program, "Veri.txt" adlı bir dosyadan verileri okuyarak organları, sistemleri ve nihayetinde bir organizmayı oluşturur. Bu oluşumlar ikili arama ağaçları kullanılarak gerçekleştirilir.
+
+Proje Özeti:
+
+1-Program, "Veri.txt" dosyasını okur ve her satırdaki sayıları kullanarak dokuları temsil eden hücreleri oluşturur. Her satır bir dokuyu temsil eder ve 20 dokudan oluşan bir organ oluşturulur.
+
+2-Oluşturulan organlar, Radix Sort algoritmasıyla küçükten büyüğe sıralanır ve ortada kalan sayıya göre ikili arama ağacına yerleştirilir.
+
+3-Organlar, 100 adetten oluşan sistemleri oluşturmak için bir araya getirilir. Her satır bir sistem olarak temsil edilir.
+
+4-Organizma, sistemlerin birleştirilmesiyle oluşur ve ekrana yazdırılır. Her satır bir sistem olarak görüntülenir. Ekrana yazdırma sırasında, organlardaki ikili arama ağaçları AVL ağacı mantığına göre dengeliyse boşluk karakteri (#) kullanılır.
+
+5-Kullanıcı enter tuşuna bastığında, organizmanın kökünde bulunan orta hücrenin DNA uzunluğu 50'ye tam bölünüyorsa, bu organı oluşturan dokuların hücreleri mutasyona uğrar. DNA uzunluğu çift olan hücrelerin değeri yarıya düşer, çift olmayan hücrelerin değeri değişmez.
+
+6-Mutasyona uğrayan ikili arama ağacı postorder olarak bir diziye alınır ve dosyadan okuma mantığına göre okunur.
+
+7-Diğer ağaçlar aynı şekilde kalırken, mutasyona uğrayan ağaç dosyadan okuma mantığına göre yeniden oluşturulur.
+
+8-Yeni oluşan organizma ekrana yazdırılır. Bu, mutasyon sonucunda yapılan değişiklikleri yansıtır.
+
+9-Proje sınıf tabanlı bir yapıda tasarlanmalıdır. Her sınıf kendi görevini yerine getirmeli ve diğer sınıfların görevlerini üstlenmemelidir.
+10-Nesne ve veri yapıları, ilkel türler haricinde heap bellek bölgesinde oluşturulmalıdır.
+
+Bu proje, veri okuma, sıralama, ikili arama ağaçları ve mutasyon gibi kavramları içeren bir uygulama geliştirmeyi hedeflemektedir. Sınıf tabanlı tasarım, kodun düzenli ve modüler olmasını sağlar. Heap bellek kullanımı, veri yapılarının daha esnek ve dinamik olmasını sağlar. Sonuç olarak, program organizmaların oluşumunu ve mutasyonunu simüle edebilir ve bu süreçleri etkileşimli bir şekilde kullanıcıya sunabilir.
